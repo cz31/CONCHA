@@ -1,6 +1,7 @@
-# WASCO: A Wasserstein-based statistical tool to compare conformational ensembles of intrinsically disordered proteins
+# CONCHA: Contact-based characterization of conformational ensembles of highly flexible proteins
 
-Welcome to WASCO, an IDP ensemble comparison tool. The method implemented in this jupyter notebook computes residue-specific distances between a pair of IDP conformational ensembles, together with an overall distance for the entire ensemble. The comparison is simultaneously made at two scales:
+
+Welcome to CONCHA, an ensemble characterization tool. The method implemented in this jupyter notebook computes residue-specific distances between a pair of IDP conformational ensembles, together with an overall distance for the entire ensemble. The comparison is simultaneously made at two scales:
 * **Global scale**: distances between the distributions of the relative positions of all residue pairs in both ensembles. For each pair of residues, we compute the (2-Wasserstein) distance between a pair of probability distributions supported on the three-dimensional euclidean space (point clouds).
 * **Local scale**: distances between the (phi, psi) angle distributions of each ensemble, for each residue along the sequence. For each residue, we compute the (2-Wasserstein) distance between a pair of probability distributions supported on the two dimensional flat torus.
 
@@ -24,11 +25,11 @@ The result of the comparison analysis is represented through a matrix, denoted $
 - [8] The entries $`\mathcal{W}_{ii}`$ may be marked with a star if their associated $p$-value is less than the significance level $`\alpha=0.05`$.
 - [9] The axes labels correspond to the residue position, counting from the N-terminal, relative to the sequence segment that is being compared (and not to the absolute position in the entire sequence).
 
-#### Running WASCO
+#### Running CONCHA
 
-To apply the comparison tool for a given pair of IDP ensembles, the user can directly execute the [comparison_tool](https://gitlab.laas.fr/moma/WASCO/-/blob/master/wasco/comparison_tool.ipynb) file, which contains its specific instructions and guidelines. This file calls all the other notebooks included in the same folder, which can also be used individually if desired. 
+To run CONCHA to characterize an ensemble, the user can directly execute the [contact_clustering](contact_clustering.ipynb) notebook, which contains the detailed pipeline and allows a step-by-step implementation of the tool.
 
-## Installing WASCO
+## Installing CONCHA
 
 CONCHA and its required dependencies can be automatically installed if Python >=3.8 is available. We recommend to perform the installation inside a [Python virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/). It can be created as follows
 ```
