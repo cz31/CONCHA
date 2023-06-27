@@ -4,7 +4,7 @@ Welcome to CONCHA, an ensemble characterization tool. CONCHA represents an ensem
 
 #### Running CONCHA
 
-To run CONCHA to characterize an ensemble, the user can directly execute the [contact_clustering](contact_clustering.ipynb) notebook, which contains the detailed pipeline and allows a step-by-step implementation of the tool.
+To run CONCHA to characterize an ensemble, the user can directly execute the [contact_clustering]([contact_clustering.ipynb](https://github.com/gonzalez-delgado/CONCHA/blob/main/concha/contact_clustering.ipynb. )) notebook, which contains the detailed pipeline and allows a step-by-step implementation of the tool.
 
 ## Installing CONCHA
 
