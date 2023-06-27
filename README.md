@@ -15,7 +15,7 @@ source pythonEnv/bin/activate
 ```
 Then, CONCHA is installed with
 ```
-pip install git+https://gitlab.laas.fr/moma/CONCHA.git
+pip install git+https://github.com/gonzalez-delgado/CONCHA.git
 ```
 Once the installation is completed, the command
 ```
